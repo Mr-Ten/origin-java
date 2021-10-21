@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a50cf3e2-fa60-465f-823a-903ecc6d26f6" name="Default Changelist" comment="14：49">
+      <change beforePath="$PROJECT_DIR$/../crmeb_java" beforeDir="false" afterPath="$PROJECT_DIR$/../crmeb_java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dts-shop" beforeDir="false" afterPath="$PROJECT_DIR$/../dts-shop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mall" beforeDir="false" afterPath="$PROJECT_DIR$/../mall" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="mybatis-mapper" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentSearchFilters">
+      <list>
+        <option value="state:open" />
+      </list>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="242eadd0-d478-40cc-b918-0c8a7c6650b4" />
+        <option name="url" value="https://github.com/Mr-Ten/origin-java.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wLgy4GzpBmGf6Ps5PMtfGRCD2n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8.0_212" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/origin-admin/src/main/java/com/origin/admin/utils/shiro" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/origin-admin/src/main/java/com/origin/admin/utils/shiro" />
+      <recent name="$PROJECT_DIR$/origin-admin/src/main/java/com/origin/admin/utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OriginAdminApplication">
+    <configuration name="MyGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.origin.admin.utils.generator.MyGenerator" />
+      <module name="origin-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.origin.admin.utils.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.origin.admin.utils.redis.RedisUtil" />
+      <module name="origin-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.origin.admin.utils.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaltUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.origin.admin.utils.SaltUtil" />
+      <module name="origin-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.origin.admin.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.origin.admin.utils.TokenUtil" />
+      <module name="origin-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.origin.admin.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generated-requests#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="OriginAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="origin-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.origin.admin.OriginAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyGenerator" />
+        <item itemvalue="HTTP Request.generated-requests#3" />
+        <item itemvalue="Application.TokenUtil" />
+        <item itemvalue="Application.RedisUtil" />
+        <item itemvalue="Application.SaltUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a50cf3e2-fa60-465f-823a-903ecc6d26f6" name="Default Changelist" comment="" />
+      <created>1628243533576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628243533576</updated>
+      <workItem from="1628243534742" duration="3197000" />
+      <workItem from="1628606948513" duration="23359000" />
+      <workItem from="1629376044415" duration="1383000" />
+      <workItem from="1629379299727" duration="349000" />
+      <workItem from="1629379652719" duration="109000" />
+      <workItem from="1629379764383" duration="389000" />
+      <workItem from="1629380156677" duration="2740000" />
+      <workItem from="1629383415701" duration="1316000" />
+      <workItem from="1629385336944" duration="1747000" />
+      <workItem from="1629387678126" duration="4323000" />
+      <workItem from="1629526725446" duration="39604000" />
+      <workItem from="1629971470033" duration="12559000" />
+      <workItem from="1630577029568" duration="2844000" />
+      <workItem from="1630586662900" duration="1638000" />
+      <workItem from="1630597192365" duration="3000" />
+      <workItem from="1630651036530" duration="5005000" />
+      <workItem from="1630919493819" duration="1942000" />
+      <workItem from="1630923047303" duration="2755000" />
+      <workItem from="1630935970766" duration="20000" />
+      <workItem from="1630936137003" duration="54000" />
+      <workItem from="1630936212981" duration="117000" />
+      <workItem from="1630936349360" duration="1176000" />
+      <workItem from="1630944785866" duration="262000" />
+      <workItem from="1630945108524" duration="41896000" />
+      <workItem from="1631635083125" duration="55000" />
+      <workItem from="1631635143305" duration="267000" />
+      <workItem from="1631706424490" duration="16207000" />
+      <workItem from="1632479160473" duration="17000" />
+      <workItem from="1632479438798" duration="233000" />
+      <workItem from="1632479698985" duration="111000" />
+      <workItem from="1632479856305" duration="19000" />
+      <workItem from="1632479956596" duration="343000" />
+      <workItem from="1632480431750" duration="509000" />
+      <workItem from="1632480968461" duration="1807000" />
+      <workItem from="1632647364500" duration="4138000" />
+      <workItem from="1632809835243" duration="136000" />
+      <workItem from="1632809982919" duration="947000" />
+      <workItem from="1632816845139" duration="23418000" />
+      <workItem from="1633761021715" duration="20316000" />
+      <workItem from="1633853032140" duration="22910000" />
+      <workItem from="1634027441310" duration="15560000" />
+      <workItem from="1634131202857" duration="9693000" />
+      <workItem from="1634471127794" duration="7988000" />
+      <workItem from="1634628582000" duration="13552000" />
+      <workItem from="1634654084927" duration="15162000" />
+      <workItem from="1634745590209" duration="2898000" />
+      <workItem from="1634784269848" duration="9649000" />
+      <workItem from="1634806354326" duration="37000" />
+      <workItem from="1634806408260" duration="724000" />
+    </task>
+    <task id="LOCAL-00002" summary="origin第一次上传">
+      <created>1634742487525</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634742487525</updated>
+    </task>
+    <task id="LOCAL-00003" summary="14：49">
+      <created>1634798990740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634798990740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="14：49">
+      <created>1634799725486</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634799725486</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="3bfc9b22-21ac-47b6-b1bb-694bd0808e7d">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/.." />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="origin第一次上传" />
+    <MESSAGE value="14：49" />
+    <option name="LAST_COMMIT_MESSAGE" value="14：49" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

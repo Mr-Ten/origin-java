@@ -1,0 +1,38 @@
+2021-09-14 23:39:50.993 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysOperLogsController': Unsatisfied dependency expressed through field 'iSysOperLogService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysOperLogServiceImpl': Unsatisfied dependency expressed through field 'sysOperLogsMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.origin.admin.mapper.auto.SysOperLogsMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-09-14 23:39:51.031 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sysOperLogsMapper in com.origin.admin.service.impl.SysOperLogServiceImpl required a bean of type 'com.origin.admin.mapper.auto.SysOperLogsMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.origin.admin.mapper.auto.SysOperLogsMapper' in your configuration.
+
+2021-09-14 23:40:33.637 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'requestLogAspect': Unsatisfied dependency expressed through field 'iSysExcLogsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysExcLogsServiceImpl': Unsatisfied dependency expressed through field 'sysExcLogsMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.origin.admin.mapper.auto.SysExcLogsMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-09-14 23:40:33.666 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sysExcLogsMapper in com.origin.admin.service.impl.SysExcLogsServiceImpl required a bean of type 'com.origin.admin.mapper.auto.SysExcLogsMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.origin.admin.mapper.auto.SysExcLogsMapper' in your configuration.
+

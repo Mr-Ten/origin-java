@@ -1,0 +1,361 @@
+2021-09-23 22:00:38.800 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-09-23 22:00:54.717 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Starting OriginAdminApplication using Java 1.8.0_212 on MrTen.local with PID 86046 (/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes started by mrteng in /Users/UserTen/滕雷工作站/AllProjectFile/origin)
+2021-09-23 22:00:54.719 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - The following profiles are active: druid
+2021-09-23 22:00:54.760 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-23 22:00:54.761 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-23 22:00:55.591 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-23 22:00:55.593 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-23 22:00:55.618 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-09-23 22:00:55.792 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$c07e6a38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:55.804 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$c311a8dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:56.006 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.origin.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$2236412e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:56.018 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getRealm' of type [com.origin.admin.utils.shiro.CustomerRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:56.160 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:56.184 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:56.194 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:00:56.502 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8100 (http)
+2021-09-23 22:00:56.509 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:00:56.509 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-23 22:00:56.509 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-23 22:00:56.557 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-23 22:00:56.557 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1795 ms
+2021-09-23 22:00:57.525 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-23 22:00:57.758 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-23 22:00:58.367 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:00:58.404 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8100 (http) with context path ''
+2021-09-23 22:00:58.405 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-23 22:00:58.418 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-23 22:00:58.439 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-23 22:00:58.578 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Started OriginAdminApplication in 4.207 seconds (JVM running for 4.848)
+2021-09-23 22:23:17.064 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-09-23 22:30:49.640 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Starting OriginAdminApplication using Java 1.8.0_212 on MrTen.local with PID 86464 (/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes started by mrteng in /Users/UserTen/滕雷工作站/AllProjectFile/origin)
+2021-09-23 22:30:49.642 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - The following profiles are active: druid
+2021-09-23 22:30:49.673 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-23 22:30:49.674 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-23 22:30:50.326 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-23 22:30:50.327 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-23 22:30:50.348 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2021-09-23 22:30:50.487 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$43d1df16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:50.495 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$46651dbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:50.650 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.origin.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$a589b60c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:50.662 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getRealm' of type [com.origin.admin.utils.shiro.CustomerRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:50.793 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:50.814 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:50.823 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:30:51.111 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8100 (http)
+2021-09-23 22:30:51.116 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:30:51.117 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-23 22:30:51.117 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-23 22:30:51.160 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-23 22:30:51.160 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1486 ms
+2021-09-23 22:30:52.024 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-23 22:30:52.256 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-23 22:30:52.812 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:30:52.835 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8100 (http) with context path ''
+2021-09-23 22:30:52.836 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-23 22:30:52.847 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-23 22:30:52.871 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-23 22:30:53.026 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Started OriginAdminApplication in 3.651 seconds (JVM running for 4.153)
+2021-09-23 22:30:56.130 [http-nio-8100-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 22:30:56.136 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-23 22:30:56.139 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-23 22:31:22.557 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-09-23 22:31:28.462 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Starting OriginAdminApplication using Java 1.8.0_212 on MrTen.local with PID 86478 (/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes started by mrteng in /Users/UserTen/滕雷工作站/AllProjectFile/origin)
+2021-09-23 22:31:28.465 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - The following profiles are active: druid
+2021-09-23 22:31:28.501 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-23 22:31:28.501 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-23 22:31:29.162 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-23 22:31:29.164 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-23 22:31:29.185 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-09-23 22:31:29.326 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$8d6693dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.335 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$8ff9d281] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.496 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.origin.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$ef1e6ad2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.507 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getRealm' of type [com.origin.admin.utils.shiro.CustomerRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.637 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.659 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.668 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:31:29.994 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8100 (http)
+2021-09-23 22:31:30.000 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:31:30.000 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-23 22:31:30.000 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-23 22:31:30.044 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-23 22:31:30.044 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+2021-09-23 22:31:30.949 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-23 22:31:31.199 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-23 22:31:31.786 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:31:31.810 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8100 (http) with context path ''
+2021-09-23 22:31:31.811 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-23 22:31:31.823 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-23 22:31:31.845 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-23 22:31:31.973 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Started OriginAdminApplication in 3.83 seconds (JVM running for 4.363)
+2021-09-23 22:32:56.789 [http-nio-8100-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 22:32:56.789 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-23 22:32:56.791 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-09-23 22:34:17.968 [http-nio-8100-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-09-23 22:34:18.067 [http-nio-8100-exec-5] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - ==>  Preparing: insert into admin_user (user_id, dept_id, account, password, user_name, status, email, create_time, login_time, last_login_time, login_count, remark, salt) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-09-23 22:34:18.099 [http-nio-8100-exec-5] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - ==> Parameters: null, 1(String), teng(String), 6e8074391e3a075114acfe136dcd836f(String), 滕(String), true(Boolean), 13@qq.com(String), null, null, null, null, 滕1(String), vPpM5b2L(String)
+2021-09-23 22:34:18.336 [http-nio-8100-exec-5] DEBUG c.origin.admin.mapper.auto.SysExcLogsMapper.insert - ==>  Preparing: insert into sys_exc_logs (exc_id, exc_requ_param, exc_name, exc_message, oper_user_id, oper_user_name, oper_method, oper_uri, oper_ip, exc_requ_time, exc_create_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-09-23 22:34:18.340 [http-nio-8100-exec-5] DEBUG c.origin.admin.mapper.auto.SysExcLogsMapper.insert - ==> Parameters: d90025d594804e71afdcbe97bddcfc81(String), {}(String), org.springframework.dao.DataIntegrityViolationException(String), org.springframework.dao.DataIntegrityViolationException:
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'user_id' cannot be null
+### The error may exist in file [/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes/mapper/auto/AdminUserMapper.xml]
+### The error may involve com.origin.admin.mapper.auto.AdminUserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into admin_user (user_id, dept_id, account,        password, user_name, status,        email, create_time, login_time,        last_login_time, login_count, remark,        salt)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'user_id' cannot be null
+; Column 'user_id' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'user_id' cannot be null
+	org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:87)
+org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+com.sun.proxy.$Proxy97.insert(Unknown Source)
+org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+com.sun.proxy.$Proxy99.insert(Unknown Source)
+com.origin.admin.service.impl.AdminUserServiceImpl.register(AdminUserServiceImpl.java:40)
+com.origin.admin.controller.AdminLoginController.register(AdminLoginController.java:43)
+com.origin.admin.controller.AdminLoginController$$FastClassBySpringCGLIB$$62344bae.invoke(<generated>)
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+com.origin.admin.controller.AdminLoginController$$EnhancerBySpringCGLIB$$620e7ada.register(<generated>)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+java.lang.Thread.run(Thread.java:748)
+(String), 1632407658336(String), tenglei(String), com.origin.admin.controller.AdminLoginController.register(String), /login/register(String), 127.0.0.1(String), null, 2021-09-23 22:34:18.336(Timestamp)
+2021-09-23 22:34:18.348 [http-nio-8100-exec-5] DEBUG c.origin.admin.mapper.auto.SysExcLogsMapper.insert - <==    Updates: 1
+2021-09-23 22:39:18.059 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-09-23 22:39:18.066 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-09-23 22:52:42.808 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Starting OriginAdminApplication using Java 1.8.0_212 on MrTen.local with PID 86687 (/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes started by mrteng in /Users/UserTen/滕雷工作站/AllProjectFile/origin)
+2021-09-23 22:52:42.810 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - The following profiles are active: druid
+2021-09-23 22:52:42.846 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-23 22:52:42.847 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-23 22:52:43.491 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-23 22:52:43.501 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-23 22:52:43.522 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-09-23 22:52:43.661 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$97e160d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:43.670 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$9a749f78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:43.829 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.origin.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$f99937c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:43.840 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getRealm' of type [com.origin.admin.utils.shiro.CustomerRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:43.976 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:43.999 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:44.009 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:52:44.320 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8100 (http)
+2021-09-23 22:52:44.326 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:52:44.327 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-23 22:52:44.327 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-23 22:52:44.371 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-23 22:52:44.371 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1523 ms
+2021-09-23 22:52:45.244 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-23 22:52:45.486 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-23 22:52:46.070 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:52:46.095 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8100 (http) with context path ''
+2021-09-23 22:52:46.096 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-23 22:52:46.110 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-23 22:52:46.137 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-23 22:52:46.276 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Started OriginAdminApplication in 3.761 seconds (JVM running for 4.301)
+2021-09-23 22:52:57.421 [http-nio-8100-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 22:52:57.421 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-23 22:52:57.422 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-09-23 22:52:57.530 [http-nio-8100-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-09-23 22:52:57.610 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - ==>  Preparing: insert into admin_user (user_id, dept_id, account, password, user_name, status, email, create_time, login_time, last_login_time, login_count, remark, salt) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-09-23 22:52:57.632 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - ==> Parameters: 890732502015016960(String), 1(String), teng(String), d63b5a016e0f8469d6f688a7308ed16d(String), 滕(String), true(Boolean), 13@qq.com(String), null, null, null, null, 滕1(String), kkgyrQrb(String)
+2021-09-23 22:52:57.731 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.SysExcLogsMapper.insert - ==>  Preparing: insert into sys_exc_logs (exc_id, exc_requ_param, exc_name, exc_message, oper_user_id, oper_user_name, oper_method, oper_uri, oper_ip, exc_requ_time, exc_create_time) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-09-23 22:52:57.734 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.SysExcLogsMapper.insert - ==> Parameters: f27a6aac8c5940668debd0572a12af87(String), {}(String), org.springframework.dao.DataIntegrityViolationException(String), org.springframework.dao.DataIntegrityViolationException:
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'create_time' cannot be null
+### The error may exist in file [/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes/mapper/auto/AdminUserMapper.xml]
+### The error may involve com.origin.admin.mapper.auto.AdminUserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into admin_user (user_id, dept_id, account,        password, user_name, status,        email, create_time, login_time,        last_login_time, login_count, remark,        salt)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'create_time' cannot be null
+; Column 'create_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'create_time' cannot be null
+	org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:87)
+org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:88)
+org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:440)
+com.sun.proxy.$Proxy97.insert(Unknown Source)
+org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271)
+org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+com.sun.proxy.$Proxy99.insert(Unknown Source)
+com.origin.admin.service.impl.AdminUserServiceImpl.register(AdminUserServiceImpl.java:41)
+com.origin.admin.controller.AdminLoginController.register(AdminLoginController.java:43)
+com.origin.admin.controller.AdminLoginController$$FastClassBySpringCGLIB$$62344bae.invoke(<generated>)
+org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+com.origin.admin.controller.AdminLoginController$$EnhancerBySpringCGLIB$$e25b63a5.register(<generated>)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+java.lang.Thread.run(Thread.java:748)
+(String), 1632408777730(String), tenglei(String), com.origin.admin.controller.AdminLoginController.register(String), /login/register(String), 127.0.0.1(String), null, 2021-09-23 22:52:57.73(Timestamp)
+2021-09-23 22:52:57.737 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.SysExcLogsMapper.insert - <==    Updates: 1
+2021-09-23 22:54:28.778 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-09-23 22:54:28.782 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-09-23 22:54:33.332 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Starting OriginAdminApplication using Java 1.8.0_212 on MrTen.local with PID 86706 (/Users/UserTen/滕雷工作站/AllProjectFile/origin/origin-admin/target/classes started by mrteng in /Users/UserTen/滕雷工作站/AllProjectFile/origin)
+2021-09-23 22:54:33.333 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - The following profiles are active: druid
+2021-09-23 22:54:33.361 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-23 22:54:33.362 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-23 22:54:34.024 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-09-23 22:54:34.025 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-09-23 22:54:34.047 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-09-23 22:54:34.185 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$968ad7a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.193 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration' of type [org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration$$EnhancerBySpringCGLIB$$991e164b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.353 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [com.origin.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$f842ae9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.364 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getRealm' of type [com.origin.admin.utils.shiro.CustomerRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.495 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'getDefaultWebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.519 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.528 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'eventBus' of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-23 22:54:34.841 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8100 (http)
+2021-09-23 22:54:34.847 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:54:34.847 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-09-23 22:54:34.847 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-23 22:54:34.889 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-09-23 22:54:34.889 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1527 ms
+2021-09-23 22:54:35.753 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-23 22:54:35.984 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-09-23 22:54:36.538 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8100"]
+2021-09-23 22:54:36.560 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8100 (http) with context path ''
+2021-09-23 22:54:36.561 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-09-23 22:54:36.571 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-09-23 22:54:36.590 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-09-23 22:54:36.714 [restartedMain] INFO  com.origin.admin.OriginAdminApplication - Started OriginAdminApplication in 3.639 seconds (JVM running for 4.154)
+2021-09-23 22:55:05.301 [http-nio-8100-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 22:55:05.301 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-09-23 22:55:05.303 [http-nio-8100-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-09-23 22:55:05.439 [http-nio-8100-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-09-23 22:55:05.572 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - ==>  Preparing: insert into admin_user (user_id, dept_id, account, password, user_name, status, email, create_time, login_time, last_login_time, login_count, remark, salt) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2021-09-23 22:55:05.610 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - ==> Parameters: 890733038470692864(String), 1(String), teng(String), c9fc08129d34734d3bb27bae78198525(String), 滕(String), true(Boolean), 13@qq.com(String), 2021-09-23 22:55:05.391(Timestamp), null, null, null, 滕1(String), BMnTmURe(String)
+2021-09-23 22:55:05.613 [http-nio-8100-exec-1] DEBUG c.origin.admin.mapper.auto.AdminUserMapper.insert - <==    Updates: 1

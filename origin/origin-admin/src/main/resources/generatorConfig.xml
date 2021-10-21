@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry location="/Users/UserTen/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar"/>
+    <!--
+      context:生成一组对象的环境
+      id:必选，上下文id，用于在生成错误时提示
+      defaultModelType:指定生成对象的样式
+        1，conditional：类似hierarchical；
+        2，flat：所有内容（主键，blob）等全部生成在一个对象中；
+        3，hierarchical：主键生成一个XXKey对象(key class)，Blob等单独生成一个对象，其他简单属性在一个对象中(record class)
+      targetRuntime:
+        1，MyBatis3：默认的值，生成基于MyBatis3.x以上版本的内容，包括XXXBySample；
+        2，MyBatis3Simple：类似MyBatis3，只是不生成XXXBySample；
+      introspectedColumnImpl：类全限定名，用于扩展MBG
+    -->
+    <context id="MSqlTables" targetRuntime="MyBatis3">
+        <!-- 自动识别数据库关键字，默认false，如果设置为true，根据SqlReservedWords中定义的关键字列表；
+        一般保留默认值，遇到数据库关键字（Java关键字），使用columnOverride覆盖
+       -->
+        <property name="autoDelimitKeywords" value="false"/>
+        <!--    生成Java文件的编码    -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!--    格式化Java代码    -->
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+        <!--    格式化xml代码    -->
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+        <!--    覆盖生成的xml文件    -->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"></plugin>
+        <!-- 实体类添加implements Serializable -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
+        <plugin type="com.origin.admin.utils.generator.LombokPlugin">
+            <!-- 抑制警告 -->
+            <property name="suppressTypeWarnings" value="true" />
+            <property name="hasLombok" value="true"/>
+        </plugin>
+
+        <!--    自定义注释生成器    -->
+        <commentGenerator type="com.origin.admin.utils.generator.GeneratorConfig">
+            <property name="suppressDate" value="true"/>
+            <!--     去除自动生成的注释       -->
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+
+        <!--数据库链接URL，用户名、密码-->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/origin?characterEncoding=utf8"
+                        userId="root"
+                        password="tray834536">
+            <property name="nullCatalogMeansCurrent" value="true" />
+            <property name="useInformationSchema" value="true"/>
+        </jdbcConnection>
+
+        <!--指定生成的类型为java类型，避免数据库中number等类型字段 -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- 生成模型的包名和位置-->
+        <javaModelGenerator targetPackage="com.origin.admin.entity.po"
+                            targetProject="origin-admin/src/main/java">
+            <!-- 是否对model添加 构造函数 -->
+            <property name="constructorBased" value="true"/>
+            <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
+            <property name="enableSubPackages" value="true" />
+            <!-- 是否对类CHAR类型的列的数据进行trim操作 -->
+            <property name="trimStrings" value="true" />
+            <property name="" value=""/>
+        </javaModelGenerator>
+
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="mapper.auto"
+                         targetProject="origin-admin/src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!--指定dao接口生成的位置-->
+        <javaClientGenerator targetPackage="com.origin.admin.mapper.auto"
+                             targetProject="origin-admin/src/main/java"
+                             type="XMLMAPPER">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+        <table tableName="sys_exc_logs" domainObjectName="SysExcLogs"
+               enableUpdateByExample="false" enableDeleteByExample="false">
+            <property name="useActualColumnNames" value="false"/>
+            <columnOverride column="exc_requ_param" javaType="java.lang.String" jdbcType="VARCHAR" />
+            <columnOverride column="exc_message" javaType="java.lang.String" jdbcType="VARCHAR" />
+        </table>
+        <table tableName="admin_user" domainObjectName="AdminUser"
+               enableUpdateByExample="false" enableDeleteByExample="false">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+    </context>
+</generatorConfiguration>

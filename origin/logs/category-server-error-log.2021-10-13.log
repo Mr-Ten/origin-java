@@ -1,0 +1,8 @@
+2021-10-13 21:14:39.053 [http-nio-8100-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-10-13 21:17:02.237 [http-nio-8100-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-10-13 21:17:50.442 [http-nio-8100-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-10-13 21:19:28.296 [http-nio-8100-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-10-13 21:23:07.055 [http-nio-8100-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-10-13 21:28:04.619 [http-nio-8100-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-10-13 22:35:48.130 [http-nio-8100-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.ClassCastException: java.util.LinkedHashSet cannot be cast to java.lang.String]
+2021-10-13 22:38:16.176 [http-nio-8100-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.ClassCastException: java.util.LinkedHashSet cannot be cast to java.lang.String]
