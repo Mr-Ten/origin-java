@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
 * <pre>
-* origin-admin system start file
+* origin-admin system start class
 * </pre>
 *
 * @author: Simon
