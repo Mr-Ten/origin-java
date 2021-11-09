@@ -2,9 +2,9 @@ package com.origin.admin.controller;
 
 import cn.hutool.core.lang.Assert;
 import com.origin.admin.constants.ConstantUtil;
-import com.origin.admin.constants.ResultCode;
+import com.origin.admin.constants.ResultCodeEnum;
 import com.origin.admin.entity.bo.AdminUserBo;
-import com.origin.admin.service.IAdminUserService;
+import com.origin.admin.service.IAdminUsersService;
 import com.origin.admin.utils.Result;
 import com.origin.admin.utils.TokenUtil;
 import com.origin.admin.utils.VerifyCodeUtils;
@@ -45,7 +45,7 @@ import java.io.IOException;
 @Log4j2
 public class AdminLoginController {
 
-    @Autowired private IAdminUserService iAdminUserService;
+    @Autowired private IAdminUsersService iAdminUsersService;
 
     @Value("${captcha.enable}")
     private Boolean captchaEnable;
@@ -53,9 +53,12 @@ public class AdminLoginController {
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     @ApiOperation(value = "添加-用户注册", notes = "用户注册")
     public Result register(@Validated @RequestBody AdminUserBo adminUserBo){
-        Integer register = iAdminUserService.register(adminUserBo);
-        if(!register.equals(1)){
-            return Result.error(ResultCode.REGISTER_FAIL);
+        if (iAdminUsersService.findUserByName(adminUserBo.getUserName()).size() > 0){
+            return Result.error(ResultCodeEnum.ADMIN_NAME_EXIST);
+        }
+        Boolean register = iAdminUsersService.register(adminUserBo);
+        if(!register){
+            return Result.error(ResultCodeEnum.REGISTER_FAIL);
         }
         return Result.success();
     }
@@ -93,20 +96,19 @@ public class AdminLoginController {
             log.info("获取到HttpSession的验证码：{}", getSessionCode);
             if(!StringUtils.equalsIgnoreCase(getSessionCode, code)){
                 request.getSession().removeAttribute(ConstantUtil.ADMIN_LOGIN_VERIFY_CODE);
-                return Result.error(ResultCode.AUTH_CAPTCHA_ERROR);
+                return Result.error(ResultCodeEnum.AUTH_CAPTCHA_ERROR);
             }
             request.getSession().removeAttribute(ConstantUtil.ADMIN_LOGIN_VERIFY_CODE);
         }
         try {
             Subject subject = SecurityUtils.getSubject();
-            log.info("传递过来的Account：{}; Password:{}", account, password);
             subject.login(new UsernamePasswordToken(account, password));
             String getToken = TokenUtil.addTokenToRedis(account, password, 0);
             return Result.success(getToken);
         } catch (UnknownAccountException e){
-            return Result.error(ResultCode.UNKNOWN_ACCOUNT);
+            return Result.error(ResultCodeEnum.UNKNOWN_ACCOUNT);
         } catch (IncorrectCredentialsException e){
-            return Result.error(ResultCode.INCORRECT_CREDENTIALS);
+            return Result.error(ResultCodeEnum.INCORRECT_CREDENTIALS);
         }
     }
 

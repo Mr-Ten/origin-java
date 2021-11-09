@@ -5,8 +5,9 @@ import com.origin.admin.annotation.OperLog;
 import com.origin.admin.entity.po.SysExcLogs;
 import com.origin.admin.entity.po.SysOperLogs;
 import com.origin.admin.service.ISysExcLogsService;
-import com.origin.admin.service.ISysOperLogService;
+import com.origin.admin.service.ISysOperLogsService;
 import com.origin.admin.utils.IPUtil;
+import com.origin.admin.utils.TokenUtil;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -25,10 +26,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * <pre>
@@ -45,7 +43,7 @@ public class RequestLogAspect {
 
     private static ThreadLocal<SysOperLogs> threadLocal = new ThreadLocal<SysOperLogs>();
     private Logger logger = LoggerFactory.getLogger(RequestLogAspect.class);
-    @Autowired private ISysOperLogService iSysOperLogService;
+    @Autowired private ISysOperLogsService iSysOperLogsService;
     @Autowired private ISysExcLogsService iSysExcLogsService;
 
     @Value("${version}")
@@ -149,17 +147,15 @@ public class RequestLogAspect {
             Map rtnMap = request.getParameterMap();// 将参数所在的数组转换成json
             String params = JSON.toJSONString(request.getParameterMap());
             operlog.setOperRequParam(params); // 请求参数
-            System.out.println("request.getMethod():"+request.getMethod());
-            System.out.println("RequestMethod.GET:"+RequestMethod.GET);
             if (!request.getMethod().equals(RequestMethod.GET)){
                 operlog.setOperResqParam(JSON.toJSONString(keys)); // 返回结果
             }
             operlog.setOperUserId(String.valueOf(System.currentTimeMillis())); // 请求用户ID
-            operlog.setOperUserName("tenglei"); // 请求用户名称
+            operlog.setOperUserName(TokenUtil.resolveAccountFromToken()); // 请求用户名称
             operlog.setOperIp(IPUtil.getRemortIP(request)); // 请求IP
             operlog.setOperUri(request.getRequestURI()); // 请求URI
             operlog.setOperCreateTime(new Date()); // 创建时间
-            iSysOperLogService.insert(operlog);
+            iSysOperLogsService.save(operlog);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -192,11 +188,11 @@ public class RequestLogAspect {
             excepLog.setExcName(e.getClass().getName()); // 异常名称
             excepLog.setExcMessage(stackTraceToString(e.getClass().getName(), e.getMessage(), e.getStackTrace())); // 异常信息
             excepLog.setOperUserId(String.valueOf(System.currentTimeMillis())); // 操作员ID
-            excepLog.setOperUserName("tenglei"); // 操作员名称
+            excepLog.setOperUserName(TokenUtil.resolveAccountFromToken()); // 操作员名称
             excepLog.setOperUri(request.getRequestURI()); // 操作URI
             excepLog.setOperIp(IPUtil.getRemortIP(request)); // 操作员IP
             excepLog.setExcCreateTime(new Date()); // 发生异常时间
-            iSysExcLogsService.insert(excepLog);
+            iSysExcLogsService.save(excepLog);
         } catch (Exception e2) {
             e2.printStackTrace();
         }
@@ -207,10 +203,10 @@ public class RequestLogAspect {
      * @param paramMap
      * @return
      */
-    public Map converMap(Map paramMap) {
+    public Map converMap(Map<String, String[]> paramMap) {
         Map rtnMap = new HashMap();
         for (Object key : paramMap.keySet()) {
-            //rtnMap.put(key, paramMap.get(key)[0]);
+            rtnMap.put(key, paramMap.get(key)[0]);
         }
         return rtnMap;
     }

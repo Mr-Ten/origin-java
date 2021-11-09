@@ -32,7 +32,7 @@ public class AdminUserBo {
      * 缺省值:0
      */
     @ApiModelProperty(value = "部门ID")
-    private String deptId;
+    private Long deptId;
 
     /**
      * 登录账号<br>
@@ -42,7 +42,7 @@ public class AdminUserBo {
      * 缺省值:null
      */
     @ApiModelProperty(value = "登录账号")
-    private String account;
+    private String userName;
 
     /**
      * 登录密码<br>
@@ -62,7 +62,7 @@ public class AdminUserBo {
      * 缺省值:null
      */
     @ApiModelProperty(value = "用户姓名")
-    private String userName;
+    private String nikeName;
 
     /**
      * 是否锁定(0:锁定，1:可用)<br>
@@ -72,7 +72,7 @@ public class AdminUserBo {
      * 缺省值:null
      */
     @ApiModelProperty(value = "是否锁定(0:锁定，1:可用)")
-    private Boolean status;
+    private Integer enable;
 
     /**
      * 电子邮件<br>
@@ -93,5 +93,14 @@ public class AdminUserBo {
      */
     @ApiModelProperty(value = "备注")
     private String remark;
+
+    @ApiModelProperty(value = "头像ID")
+    private String headsUrl;
+
+    @ApiModelProperty(value = "性别")
+    private Integer sex;
+
+    @ApiModelProperty(value = "手机号码")
+    private String phone;
 
 }

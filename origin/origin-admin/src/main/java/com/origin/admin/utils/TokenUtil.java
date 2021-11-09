@@ -106,6 +106,10 @@ public class TokenUtil {
         return build.verify(token).getClaim("account").asString();
     }
 
+    public static String resolveAccountFromToken(){
+        return resolveAccountFromToken(getRequestToken());
+    }
+
     /**
      * 添加token到redis中
      * @param account 用户登陆账号

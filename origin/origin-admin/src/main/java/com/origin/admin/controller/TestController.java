@@ -67,6 +67,7 @@ public class TestController {
     }
 
     @GetMapping("/findUserToken")
+    @OperLog(operModul = "测试参数访问", operDesc = "测试参数访问", operType = "请求获取")
     public Result findUserTokens(String key){
         final Object o = redisUtil.get(key);
         return Result.success(o);
@@ -82,6 +83,18 @@ public class TestController {
     public Result findAllToken(){
         final Set<String> keys = redisUtil.keys();
         return Result.success(keys);
+    }
+
+    @PostMapping("/errorTest")
+    public Result errorTest(){
+        int i = 1/0;
+        return Result.success();
+    }
+
+    @PostMapping("/errorParamTest")
+    public Result errorParamTest(Integer z, Integer m, String salt){
+        Integer i = z/m;
+        return Result.success(salt);
     }
 
 }

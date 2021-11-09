@@ -37,7 +37,6 @@ public class RedisCache<k, v> implements Cache<k, v> {
 
     @Override
     public v put(k k, v v) throws CacheException {
-        log.info("登陆shiro redis cache 参数cacheName:{}; key：{}; value: {}",this.cacheName, k, v);
         getRedisTemplate().opsForHash().put(this.cacheName, k.toString(), v);
         return null;
     }

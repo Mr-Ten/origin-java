@@ -1,8 +1,8 @@
 package com.origin.admin.utils.shiro;
 
-import com.origin.admin.entity.po.AdminUser;
-import com.origin.admin.service.IAdminUserService;
-import com.origin.admin.service.impl.AdminUserServiceImpl;
+import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
+import com.origin.admin.entity.po.AdminUsers;
+import com.origin.admin.service.IAdminUsersService;
 import com.origin.admin.utils.ApplicationContextUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
@@ -11,7 +11,6 @@ import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.springframework.util.ObjectUtils;
 
 /**
  * <pre>
@@ -50,10 +49,10 @@ public class CustomerRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String principal = (String) token.getPrincipal();
-        IAdminUserService userService = (IAdminUserService) ApplicationContextUtils.getBeanByName(AdminUserServiceImpl.class);
-        AdminUser user = userService.findUserName(principal);
-        if(!ObjectUtils.isEmpty(user)){
-            return new SimpleAuthenticationInfo(user.getAccount(), user.getPassword(), new MySimpleByteSource(user.getSalt()), this.getName());
+        IAdminUsersService beanByName = ApplicationContextUtils.getBeanByName(IAdminUsersService.class);
+        AdminUsers users = beanByName.findUserByName(principal).get(0);
+        if(!ObjectUtils.isEmpty(users)){
+            return new SimpleAuthenticationInfo(users.getUserName(), users.getPassword(), new MySimpleByteSource(users.getSalt()), this.getName());
         }
         return null;
     }

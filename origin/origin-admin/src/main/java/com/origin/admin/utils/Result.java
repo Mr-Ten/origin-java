@@ -1,6 +1,6 @@
 package com.origin.admin.utils;
 
-import com.origin.admin.constants.ResultCode;
+import com.origin.admin.constants.ResultCodeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
@@ -41,39 +41,39 @@ public class Result implements Serializable {
 
     public static Result success(){
         return Result.builder().success(true)
-                .code(ResultCode.SUCCESS.code())
-                .message(ResultCode.SUCCESS.message())
+                .code(ResultCodeEnum.SUCCESS.code())
+                .message(ResultCodeEnum.SUCCESS.message())
                 .timeTemp(new Date()).build();
     }
 
-    public static Result success(ResultCode resultCode){
+    public static Result success(ResultCodeEnum resultCodeEnum){
         return Result.builder().success(true)
-                .code(resultCode.code())
-                .message(resultCode.message())
+                .code(resultCodeEnum.code())
+                .message(resultCodeEnum.message())
                 .timeTemp(new Date()).build();
     }
 
     public static Result success(Object data){
         return Result.builder().success(true)
-                .code(ResultCode.SUCCESS.code())
-                .message(ResultCode.SUCCESS.message())
+                .code(ResultCodeEnum.SUCCESS.code())
+                .message(ResultCodeEnum.SUCCESS.message())
                 .data(data)
                 .timeTemp(new Date()).build();
     }
 
 
-    public static Result error(ResultCode resultCode, Object exception){
+    public static Result error(ResultCodeEnum resultCodeEnum, Object exception){
         return Result.builder().success(false)
-                .code(resultCode.code())
-                .message(resultCode.message())
+                .code(resultCodeEnum.code())
+                .message(resultCodeEnum.message())
                 .data(exception)
                 .timeTemp(new Date()).build();
     }
 
-    public static Result error(ResultCode resultCode){
+    public static Result error(ResultCodeEnum resultCodeEnum){
         return Result.builder().success(false)
-                .code(resultCode.code())
-                .message(resultCode.message())
+                .code(resultCodeEnum.code())
+                .message(resultCodeEnum.message())
                 .timeTemp(new Date()).build();
     }
 }

@@ -1,7 +1,7 @@
 package com.origin.admin.filter;
 
 import com.auth0.jwt.exceptions.JWTDecodeException;
-import com.origin.admin.constants.ResultCode;
+import com.origin.admin.constants.ResultCodeEnum;
 import com.origin.admin.utils.Result;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -19,16 +19,16 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
     public Result exceptionHandler(Exception e) {
-        return Result.error(ResultCode.SYSTEM_EXCEPTION, e.toString());
+        return Result.error(ResultCodeEnum.SYSTEM_EXCEPTION, e.toString());
     }
 
     @ExceptionHandler(value = NotLoginException.class)
     public Result exceptionHandlerNotLogin(Exception e){
-        return Result.error(ResultCode.NOT_LOGIN_ERROR, e.toString());
+        return Result.error(ResultCodeEnum.NOT_LOGIN_ERROR, e.toString());
     }
 
     @ExceptionHandler(value = JWTDecodeException.class)
     public Result exceptionHandlerTokenError(Exception e){
-        return Result.error(ResultCode.TOKEN_FORMAT_ERROR, e.toString());
+        return Result.error(ResultCodeEnum.TOKEN_FORMAT_ERROR, e.toString());
     }
 }

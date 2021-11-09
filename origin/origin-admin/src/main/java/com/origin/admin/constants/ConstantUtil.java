@@ -25,4 +25,9 @@ public class ConstantUtil {
     public static final String PASSWORD_NO_NULL = "密码不能为空";
 
     public static final String CAPTCHA_NO_NULL = "验证码不能为空";
+
+
+    public static final String TINYINT = "tinyint(1)";
+
+    public static final String ADMIN_MODULE_NAME = "/origin-admin";
 }

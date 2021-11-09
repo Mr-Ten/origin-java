@@ -1,6 +1,7 @@
 package com.origin.admin.config;
 
 import com.origin.admin.constants.ConstantUtil;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -29,18 +30,24 @@ import java.util.List;
 @EnableSwagger2
 public class Swagger2Config {
 
+    @Value("${swagger.title}")
+    private String title;
+    @Value("${swagger.description}")
+    private String description;
+    @Value("${swagger.version}")
+    private String version;
+
     @Bean
     public Docket createRestApi() {
         ParameterBuilder tokenPar = new ParameterBuilder();
         List<Parameter> pars = new ArrayList<Parameter>();
         tokenPar.name(ConstantUtil.TOKEN)
-                .description("Token")
+                .description("Token Parameter")
                 .modelRef(new ModelRef("string"))
                 .parameterType("header")
                 .required(false)
                 .build();
         pars.add(tokenPar.build());
-
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
@@ -52,9 +59,9 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Origin接口文档")
-                .description("Spring Boot 利用Swagger2构建Api文档")
-                .version("1.0")
+                .title(title)
+                .description(description)
+                .version(version)
                 .build();
     }
 }

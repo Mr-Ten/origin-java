@@ -26,12 +26,18 @@ public class SaltUtil {
 
     public static void main(String[] args) {
         String PARENT = "123456";
-        String SALT = getSalt(6);
+        String SALT = getSalt(8);
         System.out.println(SALT);
         val s = MD5Encryption(PARENT, SALT);
         System.out.println(s);
     }
 
+    /**
+     *
+     * @param parent 加密的字符
+     * @param salt 加密密钥，盐
+     * @return
+     */
     public static String MD5Encryption(String parent, String salt){
         Md5Hash md5Hash = new Md5Hash(parent, salt, 1024);
         return md5Hash.toHex();

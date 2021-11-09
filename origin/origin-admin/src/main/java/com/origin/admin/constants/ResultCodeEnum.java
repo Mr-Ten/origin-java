@@ -8,7 +8,7 @@ package com.origin.admin.constants;
  * @author: tenglei
  * @date: 2021/8/25 16:05
  */
-public enum ResultCode {
+public enum ResultCodeEnum {
 
     /*  */
     SUCCESS(200, "成功"),
@@ -51,7 +51,7 @@ public enum ResultCode {
 
     private String message;
 
-    ResultCode(Integer code, String message) {
+    ResultCodeEnum(Integer code, String message) {
         this.code = code;
         this.message = message;
     }
