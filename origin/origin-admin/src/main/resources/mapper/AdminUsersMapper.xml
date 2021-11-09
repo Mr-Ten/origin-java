@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.origin.admin.mapper.AdminUsersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.origin.admin.entity.po.AdminUsers">
+        <id column="id" property="id" />
+        <result column="user_name" property="userName" />
+        <result column="password" property="password" />
+        <result column="nike_name" property="nikeName" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="heads_id" property="headsId" />
+        <result column="dept_id" property="deptId" />
+        <result column="sex" property="sex" />
+        <result column="remark" property="remark" />
+        <result column="salt" property="salt" />
+        <result column="enable" property="enable" />
+        <result column="multi_login" property="multiLogin" />
+        <result column="last_login_time" property="lastLoginTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+</mapper>
