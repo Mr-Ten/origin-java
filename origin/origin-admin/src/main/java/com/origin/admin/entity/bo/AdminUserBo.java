@@ -1,5 +1,6 @@
 package com.origin.admin.entity.bo;
 
+import com.origin.admin.annotation.Phone;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -7,6 +8,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
+
+import javax.validation.constraints.Email;
+import java.util.List;
 
 /**
  * <pre>
@@ -23,6 +27,9 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @ApiModel(value = "管理员用户注册参数")
 public class AdminUserBo {
+
+    @ApiModelProperty(value = "ID")
+    private Long id;
 
     /**
      * 部门ID<br>
@@ -82,6 +89,7 @@ public class AdminUserBo {
      * 缺省值:null
      */
     @ApiModelProperty(value = "电子邮件")
+    @Email
     private String email;
 
     /**
@@ -100,7 +108,12 @@ public class AdminUserBo {
     @ApiModelProperty(value = "性别")
     private Integer sex;
 
+
     @ApiModelProperty(value = "手机号码")
+    @Phone
     private String phone;
+
+    @ApiModelProperty(value = "角色id")
+    private List<Long> roleId;
 
 }

@@ -32,7 +32,7 @@ public class CodeGenerator {
     private static final String property = System.getProperty("user.dir")+ConstantUtil.ADMIN_MODULE_NAME;
 
     public static void main(String[] args) {
-        String[] tables = {"roles_menu", "menu"};
+        String[] tables = {""};
         codeGeneration(tables);
         System.out.println("自动化生成代码完成...");
     }
@@ -103,8 +103,8 @@ public class CodeGenerator {
         StrategyConfig strategyConfig = new StrategyConfig();
         List<TableFill> tableFills = new ArrayList<>();
         tableFills.add(new TableFill("create_time", FieldFill.INSERT));
-        tableFills.add(new TableFill("update_time", FieldFill.INSERT_UPDATE));
-        tableFills.add(new TableFill("is_deleted", FieldFill.INSERT));
+        tableFills.add(new TableFill("update_time", FieldFill.UPDATE));
+        tableFills.add(new TableFill("is_deleted", FieldFill.DEFAULT));
         strategyConfig.setNaming(NamingStrategy.underline_to_camel)
                 .setColumnNaming(NamingStrategy.underline_to_camel)
                 .setEntityLombokModel(true)

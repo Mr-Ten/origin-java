@@ -76,4 +76,11 @@ public class Result implements Serializable {
                 .message(resultCodeEnum.message())
                 .timeTemp(new Date()).build();
     }
+
+    public static Result error(String message){
+        return Result.builder().success(false)
+                .code(-1)
+                .message(message)
+                .timeTemp(new Date()).build();
+    }
 }

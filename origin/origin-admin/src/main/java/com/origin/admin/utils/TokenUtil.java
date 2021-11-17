@@ -101,6 +101,7 @@ public class TokenUtil {
      * @return
      */
     public static String resolveAccountFromToken(String token){
+        if (StringUtils.isBlank(token) ) {return null;}
         Algorithm algorithm = Algorithm.HMAC256(TOKEN_PRIVATE_KEY);
         final JWTVerifier build = JWT.require(algorithm).build();
         return build.verify(token).getClaim("account").asString();

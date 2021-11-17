@@ -26,6 +26,10 @@ public class ConstantUtil {
 
     public static final String CAPTCHA_NO_NULL = "验证码不能为空";
 
+    public static final String PHONE_NUMBER_REGISTERED = "手机号码已注册";
+
+    public static final String DUPLICATE_INPUT_INFORMATION = "登陆账号/手机号码/邮箱信息出现重复";
+
 
     public static final String TINYINT = "tinyint(1)";
 

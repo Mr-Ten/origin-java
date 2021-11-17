@@ -79,7 +79,7 @@ public class AdminUsers extends Model<AdminUsers> {
     private Date updateTime;
 
     @ApiModelProperty(value = "是否删除")
-    @TableField(fill = FieldFill.INSERT)
+    @TableField(fill = FieldFill.DEFAULT)
     @TableLogic
     private Integer isDeleted;
 

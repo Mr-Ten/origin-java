@@ -13,7 +13,7 @@ import cn.hutool.core.lang.UUID;
 public class UUIDUtil {
 
     public static void main(String[] args) {
-        String id = "RID"+"_"+UUID.randomUUID().toString().toLowerCase().replace("-", "");
+        String id = "RN"+"_"+UUID.randomUUID().toString().toLowerCase().replace("-", "");
         System.out.println(id.substring(0,26));
     }
 }

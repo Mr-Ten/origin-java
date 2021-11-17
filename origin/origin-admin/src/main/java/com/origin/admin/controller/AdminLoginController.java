@@ -3,8 +3,6 @@ package com.origin.admin.controller;
 import cn.hutool.core.lang.Assert;
 import com.origin.admin.constants.ConstantUtil;
 import com.origin.admin.constants.ResultCodeEnum;
-import com.origin.admin.entity.bo.AdminUserBo;
-import com.origin.admin.service.IAdminUsersService;
 import com.origin.admin.utils.Result;
 import com.origin.admin.utils.TokenUtil;
 import com.origin.admin.utils.VerifyCodeUtils;
@@ -19,10 +17,7 @@ import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -45,23 +40,8 @@ import java.io.IOException;
 @Log4j2
 public class AdminLoginController {
 
-    @Autowired private IAdminUsersService iAdminUsersService;
-
     @Value("${captcha.enable}")
     private Boolean captchaEnable;
-
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
-    @ApiOperation(value = "添加-用户注册", notes = "用户注册")
-    public Result register(@Validated @RequestBody AdminUserBo adminUserBo){
-        if (iAdminUsersService.findUserByName(adminUserBo.getUserName()).size() > 0){
-            return Result.error(ResultCodeEnum.ADMIN_NAME_EXIST);
-        }
-        Boolean register = iAdminUsersService.register(adminUserBo);
-        if(!register){
-            return Result.error(ResultCodeEnum.REGISTER_FAIL);
-        }
-        return Result.success();
-    }
 
     @RequestMapping(value = "/getImage", method = RequestMethod.GET)
     @ApiOperation(value = "获取验证码")

@@ -2,7 +2,7 @@ package com.origin.admin.interceptors;
 
 import com.origin.admin.annotation.PassToken;
 import com.origin.admin.constants.ConstantUtil;
-import com.origin.admin.filter.NotLoginException;
+import com.origin.admin.filter.BusinessException;
 import com.origin.admin.utils.TokenUtil;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.method.HandlerMethod;
@@ -39,7 +39,7 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
             }
         }
         if (!TokenUtil.isLogin(request)){
-            throw new NotLoginException(ConstantUtil.NO_LOGIN_ERROR);
+            throw new BusinessException(ConstantUtil.NO_LOGIN_ERROR);
         }
         return true;
     }

@@ -1,2 +1,0 @@
-2021-09-26 17:33:08.405 [http-nio-8100-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
-2021-09-26 18:21:44.725 [http-nio-8100-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]

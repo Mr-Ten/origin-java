@@ -10,6 +10,7 @@ import com.origin.admin.utils.IPUtil;
 import com.origin.admin.utils.TokenUtil;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -183,12 +184,13 @@ public class RequestLogAspect {
             methodName = className + "." + methodName;// 请求的参数
             Map rtnMap = converMap(request.getParameterMap());// 将参数所在的数组转换成json
             String params = JSON.toJSONString(rtnMap);
+            final String userName = TokenUtil.resolveAccountFromToken();
             excepLog.setExcRequParam(params); // 请求参数
             excepLog.setOperMethod(methodName); // 请求方法名
             excepLog.setExcName(e.getClass().getName()); // 异常名称
             excepLog.setExcMessage(stackTraceToString(e.getClass().getName(), e.getMessage(), e.getStackTrace())); // 异常信息
             excepLog.setOperUserId(String.valueOf(System.currentTimeMillis())); // 操作员ID
-            excepLog.setOperUserName(TokenUtil.resolveAccountFromToken()); // 操作员名称
+            excepLog.setOperUserName(StringUtils.isBlank(userName) ? "admin" : userName); // 操作员名称
             excepLog.setOperUri(request.getRequestURI()); // 操作URI
             excepLog.setOperIp(IPUtil.getRemortIP(request)); // 操作员IP
             excepLog.setExcCreateTime(new Date()); // 发生异常时间
